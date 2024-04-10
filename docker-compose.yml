@@ -26,6 +26,7 @@ services:
     depends_on:
       - postgres
     environment:
+      - RUST_LOG=${RUST_LOG}
       - DEBRIDGE_EVENTS_PSQL=${DEBRIDGE_SOLANA_EVENTS_PSQL}
       - DEBRIDGE_EVENTS_API_SENTRY_URL=${DEBRIDGE_EVENTS_SENTRY_DSN}
   solana-events-reader:
