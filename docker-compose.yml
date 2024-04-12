@@ -19,7 +19,7 @@ services:
     networks:
       - debridge-node-network
   solana-grpc-service:
-    image: debridgefinance/debridge-solana-events-reader-grpc-server:v0.9.3@sha256:1b60e96f3363402150b22bbdf74a7820fa19227bc0955a535e1df8c3e04a882c
+    image: debridgefinance/debridge-solana-events-reader-grpc-server:v0.9.4@sha256:858708f26a2fbb5600ce8d9d06da584c162ae655591632e096ed49be83f9b235
     container_name: solana-grpc-service${DOCKER_ID}
     networks:
       - debridge-node-network
@@ -30,7 +30,7 @@ services:
       - DEBRIDGE_EVENTS_PSQL=${DEBRIDGE_SOLANA_EVENTS_PSQL}
       - DEBRIDGE_EVENTS_API_SENTRY_URL=${DEBRIDGE_EVENTS_SENTRY_DSN}
   solana-events-reader:
-    image: debridgefinance/debridge-solana-events-reader:v0.9.3@sha256:3957d5511824ce05d118657f62123c3e74ad8c50c399c641c1d38f1e6d7e350b
+    image: debridgefinance/debridge-solana-events-reader:v0.9.4@sha256:3c0f638218361877437b271e1fec2415ec5f972cf0e0146318633c7218624e73
     hostname: events-reader
     networks:
      - debridge-node-network
