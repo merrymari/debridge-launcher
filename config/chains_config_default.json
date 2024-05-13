@@ -29,6 +29,16 @@
     "maxBlockRange": 5000
   },
   {
+    "chainId": 128,
+    "name": "HECO",
+    "debridgeAddr": "0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
+    "firstStartBlock": 10232530,
+    "provider": "https://http-mainnet.hecochain.com",
+    "interval": 10000,
+    "blockConfirmation": 12,
+    "maxBlockRange": 5000
+  },
+  {
     "chainId": 137,
     "name": "MATIC",
     "debridgeAddr": "0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
